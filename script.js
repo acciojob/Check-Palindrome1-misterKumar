@@ -1,5 +1,5 @@
 // complete the given function
-
+/*
 function palindrome(str){
 	str=str.toLowerCase();
     let i=0,j=str.length-1;
@@ -18,4 +18,19 @@ function palindrome(str){
     }
 	return true;
 }
+module.exports = palindrome
+*/
+// complete the given function
+
+function palindrome(str){
+	// var ans = str.trim();
+	var str1 = str.toLowerCase();
+for(var i=0; i<str1.length/2; i++){
+	if(str1[i]!==str1[(str.length-1)-i]){
+		return false;
+		}
+	}
+	return true;
+}
+	
 module.exports = palindrome
